@@ -9,7 +9,7 @@ import subprocess
 from dataclasses import dataclass
 from pathlib import Path
 
-DEFAULT_WORKTREE_BASE = Path.home() / "Projects" / "warp_worktrees"
+DEFAULT_WORKTREE_BASE = Path.home() / "Projects" / "worker_worktrees"
 WORKTREE_BASE_ENV_VARS = (
     "WORKER_EXT_WORKTREE_BASE_DIR",
     "WORKTREE_BASE_DIR",

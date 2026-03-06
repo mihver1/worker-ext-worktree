@@ -2,7 +2,7 @@
 `worker-ext-worktree` is a Worker extension that adds a `/wt` slash command for managing git worktrees from the current repository.
 
 ## What it does
-- Creates managed worktrees under `~/Projects/warp_worktrees/<repo>/...`
+- Creates managed worktrees under `~/Projects/worker_worktrees/<repo>/...`
 - Lists current repository worktrees
 - Removes managed worktrees by a unique path fragment
 - Handles the git limitation that the same branch cannot be checked out in two worktrees at once
@@ -52,7 +52,7 @@ Shows all worktrees for the current repository and marks them as:
 Removes a managed worktree by a unique fragment of its path. For example, if the path is:
 
 ```text
-/Users/me/Projects/warp_worktrees/worker/feature_demo_a1b2c3
+/Users/me/Projects/worker_worktrees/worker/feature_demo_a1b2c3
 ```
 
 Then any unique fragment like `a1b2c3` or `feature_demo_a1b2c3` can be used.
@@ -72,7 +72,7 @@ Safety rules:
 The managed worktree base directory defaults to:
 
 ```text
-~/Projects/warp_worktrees
+~/Projects/worker_worktrees
 ```
 
 You can override it with one of these environment variables:
